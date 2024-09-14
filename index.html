@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Startup - Health Monitoring Bands</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter antialiased text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-blue-600">Medical Startup</a>
+      <ul class="flex space-x-12">
+        <li><a href="#about" class="hover:text-blue-600">About Us</a></li>
+        <!-- <li><a href="#products" class="hover:text-blue-600">Products</a></li> -->
+        <li><a href="#technology" class="hover:text-blue-600">Technology</a></li>
+        <li><a href="#footer" class="hover:text-blue-600">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('path-to-background-image.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-900/70 to-purple-900/70"></div>
+      <div id="homeContent" class="container mx-auto px-6 text-center text-white relative z-10 transform transition-all duration-1000 translate-y-12 opacity-0">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Transforming Healthcare with
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+            Smart Health Monitoring
+          </span>
+        </h1>
+        <p class="text-lg md:text-2xl mb-12 max-w-3xl mx-auto">
+          Discover the future of health monitoring with our advanced, wearable technology designed to empower you with real-time health insights.
+        </p>
+        <div class="space-x-4">
+          <a href="#about" class="inline-block bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-4 rounded-full transition transform hover:scale-105 hover:shadow-lg">
+            Learn More
+          </a>
+          <a href="#contact" class="inline-block bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-full transition transform hover:scale-105 hover:shadow-lg">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden">
+      <div class="container mx-auto px-6">
+        <div id="aboutHeader" class="text-center mb-16 transform transition-all duration-1000 opacity-0 translate-y-12">
+          <h2 class="text-4xl font-bold text-gray-800">About Us</h2>
+          <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
+            We are committed to pioneering wearable technology that bridges the gap between cutting-edge science and everyday health monitoring. Our mission is to empower individuals with real-time insights into their well-being, using advanced sensors and AI.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Mission -->
+          <div id="missionCard" class="bg-white rounded-lg shadow-lg p-8 hover:scale-105 transform transition duration-500 opacity-0 translate-y-12">
+            <div class="text-blue-600 text-5xl mb-6 flex justify-center">
+              <!-- Heart Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.4 4.4 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.6 3 22 5.4 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+            <p class="text-gray-600 leading-relaxed">
+              To harness the latest in sensor technology and AI to offer non-invasive, accurate, and real-time health monitoring solutions that adapt to individual needs and lifestyles.
+            </p>
+          </div>
+          <!-- Values -->
+          <div id="valuesCard" class="bg-white rounded-lg shadow-lg p-8 hover:scale-105 transform transition duration-500 opacity-0 translate-y-12">
+            <div class="text-green-600 text-5xl mb-6 flex justify-center">
+              <!-- Star Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Values</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We are guided by a commitment to innovation, integrity, and inclusivity. Our technology aims to provide personalized health insights, enhancing the quality of life for all.
+            </p>
+          </div>
+          <!-- Technology -->
+          <div id="technologyCard" class="bg-white rounded-lg shadow-lg p-8 hover:scale-105 transform transition duration-500 opacity-0 translate-y-12">
+            <div class="text-purple-600 text-5xl mb-6 flex justify-center">
+              <!-- Laptop Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 18c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2H4C2.9 3 2 3.89 2 5v11c0 1.1.9 2 2 2H0v2h24v-2h-4z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Technology</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Our devices utilize cutting-edge sensors like the MAX30205 for temperature monitoring and sweat sensors for analyzing biomarkers, pushing the boundaries of non-invasive health monitoring.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Technology Section -->
+    <section id="technology" class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div id="technologyHeader" class="text-center mb-16 transform transition-all duration-1000 opacity-0 translate-y-12">
+          <h2 class="text-4xl font-bold text-gray-800">Our Technology</h2>
+          <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
+            Advanced sensor technology and AI integration power our wearable devices, offering unprecedented insights into your health.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div id="technologyImage" class="transform transition-all duration-1000 opacity-0 translate-x-12">
+            <img src="smartwatch_image.webp" alt="Our Technology" class="w-full h-auto rounded-2xl shadow-lg" />
+          </div>
+          <div id="technologyFeatures" class="space-y-6">
+            <!-- AI Integration -->
+            <div class="flex items-start transform transition-all duration-500 opacity-0 translate-x-12">
+              <div class="flex-shrink-0">
+                <!-- AI Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-4 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4V3h-8v5c0 2.21 1.79 4 4 4zm6.36 1.28c-.68.7-1.52 1.26-2.47 1.63L15 16h3v2h-4v-3.02c-.71.19-1.46.32-2.22.32-.75 0-1.5-.13-2.22-.32V18H6v-2h3l-.88-.09c-.95-.37-1.79-.94-2.47-1.63l1.41-1.41c1.23 1.23 3.07 1.23 4.3 0l1.41 1.41c-.69.68-1.51 1.22-2.42 1.54L9 14.5v-1.27c.97.33 1.98.53 3 .53s2.03-.2 3-.53V14.5l-.43.09c-.91-.32-1.74-.86-2.42-1.54l1.41-1.41c1.23 1.23 3.07 1.23 4.3 0l1.41 1.41zM7 9V3H5v6c0 1.1.9 2 2 2h1v-2H7zm12 0V3h-2v6h-1v2h1c1.1 0 2-.9 2-2z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">AI Integration</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  Our AI algorithms analyze complex health data to provide personalized insights, from hormonal fluctuations to stress indicators.
+                </p>
+              </div>
+            </div>
+            <!-- Advanced Sensors -->
+            <div class="flex items-start transform transition-all duration-500 opacity-0 translate-x-12">
+              <div class="flex-shrink-0">
+                <!-- Sensor Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-4 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 3C8.1 3 5 6.1 5 10c0 1.1.3 2.2.8 3.2l-3.4 3.4C1.9 16 1.4 16 1 16c-.6 0-1 .4-1 1 0 .4 0 .9.4 1.2l3.4 3.4c.9.5 2 .8 3.2.8 3.9 0 7-3.1 7-7s-3.1-7-7-7zM23 13c0-5.5-4.5-10-10-10-.5 0-1 .4-1 1s.4 1 1 1c4.4 0 8 3.6 8 8 0 .5.4 1 1 1s1-.4 1-1z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Advanced Sensors</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  Equipped with sensors like the MAX30205 for temperature and sweat analysis for biomarkers, our wearables offer a deeper look into your health.
+                </p>
+              </div>
+            </div>
+            <!-- Sweat Analysis -->
+            <div class="flex items-start transform transition-all duration-500 opacity-0 translate-x-12">
+              <div class="flex-shrink-0">
+                <!-- Sweat Sensor Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-4 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20 11c-1.11 0-2.07.39-2.85 1H7.85C7.07 11.39 6.11 11 5 11c-2.76 0-5 2.24-5 5s2.24 5 5 5c1.11 0 2.07-.39 2.85-1h9.3c.78.61 1.74 1 2.85 1 2.76 0 5-2.24 5-5s-2.24-5-5-5zM5 18c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm15 0c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Sweat Analysis</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  Using innovative sweat sensors, our wearables analyze biomarkers like pH, cortisol, and electrolytes to provide insights into hormonal and metabolic health.
+                </p>
+              </div>
+            </div>
+            <!-- Multi-Sensor Arrays -->
+            <div class="flex items-start transform transition-all duration-500 opacity-0 translate-x-12">
+              <div class="flex-shrink-0">
+                <!-- Multi-Sensor Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-4 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 4.61 2.64 8.58 6.5 10.43l-.5 2.57 2.5-1.39C10.78 23.43 13.34 24 16 24c6.63 0 12-5.37 12-12S22.63 0 16 0zm0 22c-1.93 0-3.75-.55-5.32-1.5l-2.18 1.21.44-2.28c-2.39-1.39-3.94-3.97-3.94-6.93 0-4.96 4.04-9 9-9s9 4.04 9 9-4.04 9-9 9z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Multi-Sensor Arrays</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  Our devices use a combination of sensors, from temperature to sweat analyzers, providing a comprehensive overview of your body's responses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Company Info -->
+        <div class="text-center md:text-left">
+          <a href="#" class="text-3xl font-bold text-white hover:text-blue-300 transition">
+            Medical Startup
+          </a>
+          <p class="mt-4 text-blue-200">
+            Transforming healthcare with innovative wearable technology.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="text-center md:text-left">
+          <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-blue-200 hover:text-white transition">Home</a></li>
+            <li><a href="#about" class="text-blue-200 hover:text-white transition">About Us</a></li>
+            <li><a href="#products" class="text-blue-200 hover:text-white transition">Products</a></li>
+            <li><a href="#technology" class="text-blue-200 hover:text-white transition">Technology</a></li>
+          </ul>
+        </div>
+        <!-- Contact Info -->
+        <div class="text-center md:text-left">
+          <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+          <p class="text-blue-200 mb-2">123 Health Street, Wellness City, 12345</p>
+          <a href="mailto:info@medicalstartup.com" class="text-blue-200 hover:text-white transition">info@medicalstartup.com</a>
+          <div class="mt-4 space-x-4">
+            <!-- Social Media Icons -->
+            <a href="#" class="text-blue-200 hover:text-white transition" aria-label="Facebook">
+              <!-- Facebook Icon -->
+              <svg class="h-6 w-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24H12v-9.294H9.294V11.47H12V8.822c0-2.684 1.644-4.152 4.042-4.152 1.151 0 2.141.085 2.428.123v2.816h-1.666c-1.307 0-1.561.621-1.561 1.533v2.01h3.123l-.407 3.235h-2.716V24h5.327c.725 0 1.325-.6 1.325-1.325V1.325C24 .6 23.4 0 22.675 0z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-blue-200 hover:text-white transition" aria-label="Twitter">
+              <!-- Twitter Icon -->
+              <svg class="h-6 w-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.954 4.569c-.885.385-1.83.645-2.825.762a4.925 4.925 0 0 0 2.163-2.723 9.866 9.866 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.385 4.482 13.975 13.975 0 0 1-10.15-5.145 4.822 4.822 0 0 0-.664 2.475 4.92 4.92 0 0 0 2.19 4.096 4.903 4.903 0 0 1-2.229-.616c-.054 1.955 1.362 3.791 3.387 4.2a4.935 4.935 0 0 1-2.224.085 4.928 4.928 0 0 0 4.604 3.419 9.867 9.867 0 0 1-6.1 2.105c-.39 0-.779-.023-1.17-.069a13.945 13.945 0 0 0 7.548 2.212c9.055 0 14.009-7.496 14.009-13.986 0-.21 0-.423-.015-.634a9.935 9.935 0 0 0 2.457-2.548l-.047-.02z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-blue-200 hover:text-white transition" aria-label="LinkedIn">
+              <!-- LinkedIn Icon -->
+              <svg class="h-6 w-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.98 3C3.12 3 2 4.2 2 5.66 2 7.14 3.11 8.32 5.04 8.32h.06c1.92 0 3.01-1.18 3.01-2.66-.06-1.46-1.09-2.66-3.09-2.66H4.98zM2.1 21h6V9h-6v12zM14.66 9c-1.93 0-2.85 1.04-3.34 1.78v-1.54h-6v12h6v-6.68c0-1.75.33-3.46 2.54-3.46 2.17 0 2.2 2.03 2.2 3.57V21h6v-6.71C22 11.4 19.67 9 16.4 9c-1.76 0-2.9.72-3.74 1.48l-.06-.48z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-blue-200 hover:text-white transition" aria-label="Instagram">
+              <!-- Instagram Icon -->
+              <svg class="h-6 w-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.013 4.85.072 3.252.146 4.77 1.69 4.917 4.918.06 1.266.07 1.645.07 4.847 0 3.204-.013 3.584-.072 4.85-.147 3.226-1.664 4.77-4.917 4.917-1.266.06-1.646.07-4.85.07s-3.583-.013-4.849-.072c-3.225-.147-4.77-1.664-4.917-4.917C2.176 16.614 2.163 16.234 2.163 13.03c0-3.204.013-3.584.072-4.85.147-3.226 1.692-4.77 4.917-4.917 1.266-.06 1.646-.072 4.849-.072M12 0C8.741 0 8.332.013 7.052.072 2.694.272.272 2.694.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.2 4.358 2.622 6.78 7.048 6.98 1.28.06 1.69.072 4.88.072 3.259 0 3.668-.013 4.948-.072 4.358-.2 6.78-2.622 6.98-6.98.06-1.28.072-1.69.072-4.949 0-3.259-.013-3.668-.072-4.948-.2-4.358-2.622-6.78-6.98-6.98C15.668.013 15.259 0 12 0z"/>
+                <path d="M12 5.838A6.163 6.163 0 1 0 18.163 12 6.17 6.17 0 0 0 12 5.838zm0 10.162A3.999 3.999 0 1 1 16 12a4.005 4.005 0 0 1-4 4z"/>
+                <circle cx="18.406" cy="5.594" r="1.44"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-blue-800 text-center">
+        <p class="text-blue-200">&copy; 2023 Medical Startup. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
