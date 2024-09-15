@@ -67,3 +67,63 @@ document.addEventListener('DOMContentLoaded', (event) => {
       observer.observe(footer);
     }
   });
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+  
+    const prototypeSection = document.getElementById('prototype');
+    if (prototypeSection) {
+      observer.observe(prototypeSection);
+    }
+  });
+
+
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  
+    // Close mobile menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  
+    // Hide mobile menu on resize if it becomes unnecessary
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  
+    // Adjust padding-top of the body to account for fixed header
+    const header = document.querySelector('header');
+    const body = document.body;
+    body.style.paddingTop = header.offsetHeight + 'px';
+  
+    window.addEventListener('resize', () => {
+      body.style.paddingTop = header.offsetHeight + 'px';
+    });
+  });
